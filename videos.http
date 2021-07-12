@@ -3,7 +3,7 @@
 GET {{api}}/videos
 
 ###
-GET {{api}}/videos/1
+GET {{api}}/videos/60eb9c01f7b5162918563aab
 
 ### Create a video
 POST {{api}}/videos
@@ -15,7 +15,12 @@ Content-Type: application/json
     "description": "A new MERN video"
 }
 ###
-DELETE {{api}}/videos/1
+DELETE {{api}}/videos/60eb9c01f7b5162918563aab
 
 ###
-PATCH {{api}}/videos/1
+PUT {{api}}/videos/60eb9c01f7b5162918563aab
+Content-Type: application/json
+
+{
+    "title": "MERN Application"
+}

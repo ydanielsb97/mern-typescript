@@ -6,6 +6,7 @@ import config from "./config";
     const mongooseOptions: ConnectionOptions = {
       useUnifiedTopology: true,
       useNewUrlParser: true,
+      autoReconnect: true,
       // user: config.MONGO_USER,
       // pass: config.MONGO_PASSOWRD,
     };
